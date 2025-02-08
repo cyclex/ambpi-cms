@@ -177,7 +177,7 @@
                                 <textarea id="notes" class="form-control"></textarea>
                             </div>
                         </div>
-                        <? } ?>
+                        <?php } ?>
 
                     </div>
                     <!-- /.box-body -->
