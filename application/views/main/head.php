@@ -58,7 +58,7 @@
     <!-- CUSTOM CSS -->
     <script>
         $(document).ready(function () {
-            $('.sidebar-menu').tree();
+            // $('.sidebar-menu').tree();
             // $("input").val().toUpperCase();
             $('a[href="http://localhost' + this.location.pathname + '"]').parents().addClass('active');
         })
