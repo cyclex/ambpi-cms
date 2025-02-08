@@ -83,14 +83,14 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-4 control-label">New Password</label>
                             <div class="col-sm-8">
-                                <input class="form-control" placeholder="****" type="password" name="new" required id="new" oninput="checkPasswords()">
+                                <input class="form-control" placeholder="****" type="password" name="new" required id="new2" oninput="checkPasswords2()">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-4 control-label">Confirmation Password</label>
                             <div class="col-sm-8">
-                                <input class="form-control" placeholder="****" type="password" name="conf" required id="conf" oninput="checkPasswords()">
-                                <p class="help-block" id="message" style="color: red;"></p>
+                                <input class="form-control" placeholder="****" type="password" name="conf" required id="conf2" oninput="checkPasswords2()">
+                                <p class="help-block" id="message2" style="color: red;"></p>
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@
                     <!-- /.box-body -->
                     <div class="box-footer">
                         <button type="submit" class="btn btn-default" data-dismiss="modal">Batal</button>
-                        <input type="submit" class="btn btn-success pull-right" value="Simpan" id="submit" disabled>
+                        <input type="submit" class="btn btn-success pull-right" value="Simpan" id="submit2" disabled>
                     </div>
                     <!-- /.box-footer -->
                 </form>
@@ -143,14 +143,14 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-4 control-label">New Password</label>
                             <div class="col-sm-8">
-                                <input class="form-control" placeholder="****" type="password" name="new" required id="new" oninput="checkPasswords()">
+                                <input class="form-control" placeholder="****" type="password" name="new" required id="new3" oninput="checkPasswords3()">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-4 control-label">Confirmation Password</label>
                             <div class="col-sm-8">
-                                <input class="form-control" placeholder="****" type="password" name="conf" required id="conf" oninput="checkPasswords()">
-                                <p class="help-block" id="message" style="color: red;"></p>
+                                <input class="form-control" placeholder="****" type="password" name="conf" required id="conf3" oninput="checkPasswords3()">
+                                <p class="help-block" id="message3" style="color: red;"></p>
                             </div>
                         </div>
 
@@ -158,7 +158,7 @@
                     <!-- /.box-body -->
                     <div class="box-footer">
                         <button type="submit" class="btn btn-default" data-dismiss="modal">Batal</button>
-                        <input type="submit" class="btn btn-success pull-right" value="Simpan" id="submit" disabled>
+                        <input type="submit" class="btn btn-success pull-right" value="Simpan" id="submit3" disabled>
                     </div>
                     <!-- /.box-footer -->
                 </form>

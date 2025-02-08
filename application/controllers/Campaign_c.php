@@ -48,7 +48,6 @@ class Campaign_c extends CI_Controller
 
         $startDate = strtotime($_POST['start']);
         $endDate = strtotime($_POST['end']);
-        $id = $_POST['id'];
 
         if ($startDate >= $endDate ){
             $obj = ["status" => false, "message" => "waktu campaign tidak valid"];   
@@ -60,7 +59,7 @@ class Campaign_c extends CI_Controller
                 "endDate" => $endDate,
             ]);
     
-            $data = $this->curl->curl_put(serverHost."/v1/campaign/".$id, $payload);
+            $data = $this->curl->curl_put(serverHost."/v1/campaign/1", $payload);
             $obj = json_decode($data, true);
         }
         

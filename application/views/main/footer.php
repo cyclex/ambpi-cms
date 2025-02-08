@@ -26,6 +26,32 @@
             document.getElementById('submit').disabled = false;
         }
     }
+
+    function checkPasswords2() {
+        var newPassword = document.getElementById('new2').value;
+        var confirmPassword = document.getElementById('conf2').value;
+
+    if (confirmPassword !== newPassword) {
+            document.getElementById('message2').innerText = 'Please input confirmation password correctly.';
+            document.getElementById('submit2').disabled = true;
+        } else {
+            document.getElementById('message2').innerText = '';
+            document.getElementById('submit2').disabled = false;
+        }
+    }
+
+    function checkPasswords3() {
+        var newPassword = document.getElementById('new3').value;
+        var confirmPassword = document.getElementById('conf3').value;
+
+    if (confirmPassword !== newPassword) {
+            document.getElementById('message3').innerText = 'Please input confirmation password correctly.';
+            document.getElementById('submit3').disabled = true;
+        } else {
+            document.getElementById('message3').innerText = '';
+            document.getElementById('submit3').disabled = false;
+        }
+    }
 </script>
 
 
