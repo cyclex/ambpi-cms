@@ -159,7 +159,7 @@
                         <div class="form-group row">
                             <label for="inputPassword3" class="col-sm-4 control-label">Struk</label>
                             <div class="col-sm-8">
-                                <p id="struk"></p>
+                                <img id="struk" style="width: 50%;"></img>
                                 <input type="hidden" class="form-control" id="redeem_id">
                             </div>
                         </div>
@@ -367,6 +367,13 @@
                     $("#prize").text(response.prize);
                     $("#redeemDate").text(response.dateRedeem);
                     $('#redeem_id').val(response.id);
+
+                    if (response.receipt) {
+                        let imageUrl = "<?php echo serverHostFile.'/v1/media/'; ?>" + response.receipt; // Adjust the path as needed
+                        $("#struk").attr("src", imageUrl);
+                    } else {
+                        $("#struk").attr("src", "<?php echo base_url('assets/img/no-image.png'); ?>"); // Default image if receipt is missing
+                    }
                 },
                 error: function(xhr, status, error) {
                     alert("Failed to submit request. Please try again.");

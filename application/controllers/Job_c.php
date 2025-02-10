@@ -57,7 +57,7 @@ class Job_c extends CI_Controller
             ]);
         } 
 
-        $data = $this->curl->curl_post_json(serverHostCms."/v1/job/create", $payload);
+        $data = $this->curl->curl_post_json(serverHost."/v1/job/create", $payload);
         $obj = json_decode($data, true);
         
         if ($obj['status']){
